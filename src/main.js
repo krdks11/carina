@@ -10,7 +10,7 @@ import { onMouseMove, onMouseClick, onWindowResize, animate, initScene } from '.
 const header = document.createElement('header')
 header.innerHTML = `
   <h1>Carina DevWorks</h1>
-  <p>Interactive 3D Services Showcase</p>
+  <p>A Complete Solution for Development</p>
   <nav>
     <button class="nav-btn active" data-view="all">All Services</button>
     <button class="nav-btn" data-view="frontend">Frontend</button>
@@ -40,7 +40,7 @@ const loadingScreen = document.createElement('div')
 loadingScreen.className = 'loading-screen'
 loadingScreen.innerHTML = `
   <div class="loader"></div>
-  <p>Loading Experience...</p>
+  <p>Loading DevWorks...</p>
 `
 document.body.appendChild(loadingScreen)
 
