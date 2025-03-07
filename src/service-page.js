@@ -1,6 +1,7 @@
 import * as THREE from 'three'
 import * as TWEEN from '@tweenjs/tween.js'
 import { createPricingPage } from './pricing-page.js'
+import { showContactPage } from './contact-page.js'
 
 let servicePageContainer = null
 let interactiveButton = null
@@ -113,6 +114,10 @@ function createServicePage(service) {
   `
   content.appendChild(cta)
 
+  // Add contact button click handler
+  const contactBtn = cta.querySelector('.contact-btn')
+  contactBtn.addEventListener('click', showContactPage)
+  
   // Add pricing button click handler only if it's not a custom quote service
   if (!isCustomQuote) {
     const pricingBtn = cta.querySelector('.pricing-btn')
@@ -224,3 +229,7 @@ export function initServicePage(service) {
   }
   createServicePage(service)
 }
+
+// Using imported showContactPage function from contact-page.js
+
+// Using imported contact page functionality from contact-page.js

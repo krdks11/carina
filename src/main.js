@@ -1,10 +1,12 @@
 import './style.css'
+import './contact-page.css'
 import * as THREE from 'three'
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
 import * as TWEEN from '@tweenjs/tween.js'
 import { onMouseMove, onMouseClick, onWindowResize, animate, initScene } from './service-detail.js'
+import { showContactPage } from './contact-page.js'
 
 // Create UI elements
 const header = document.createElement('header')
